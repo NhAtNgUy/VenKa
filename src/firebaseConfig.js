@@ -13,7 +13,5 @@ const firebaseConfig = {
   };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getFirestore(app); // Khởi tạo Firestore
-  
-export { auth, db }; // Export cả auth và db
+export const db = getFirestore(app);
+export const auth = getAuth(app);
